@@ -1,0 +1,179 @@
+{
+    "explorer.autoReveal": true,
+    "remote.SSH.showLoginTerminal": true,
+    "emmet.excludeLanguages": [
+        "markdown",
+        "php"
+    ],
+    "terminal.integrated.smoothScrolling": true,
+    "zenMode.hideLineNumbers": false,
+
+    "projectManager.git.baseFolders": ["/Users/leiming/go/src","/Users/leiming/PycharmProjects"],
+    "projectManager.sortList": "Recent",
+
+    // ========================Language==============================
+
+    "go.testTags": "iface_mock",
+    "go.goroot": "/usr/local/go",
+    "go.gopath": "/Users/leiming/go",
+    "go.toolsManagement.autoUpdate": true,
+    "gomod.autoReveal": true,
+    "gomod.focusMode": false,
+    "gopls": { "ui.semanticTokens": true },
+    "php.validate.enable": false,
+    "typescript.suggest.paths": false, 
+    "javascript.suggest.paths": false,
+
+    // ========================Workbench=============================
+
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.list.smoothScrolling": true,
+    "workbench.colorTheme": "GitHub Dark",
+
+    // ========================Editor================================
+
+    "editor.smoothScrolling": true,
+    "editor.fontSize": 13,
+    "editor.peekWidgetDefaultFocus": "editor",    // 当通过 widget peek 代码时，优先聚焦在编辑器
+    "editor.minimap.enabled": false,
+    "editor.lineHeight": 22,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.hover.enabled": true,
+    "editor.fontLigatures": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.bracketPairColorization.enabled": false,
+
+    // ========================Vim  Settings========================= 
+
+    "vim.leader": "<space>",
+    "vim.showMarksInGutter": false,
+    "vim.foldfix": true,
+    "vim.surround": true,
+    "vim.enableNeovim": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<S-j>"],
+            "after": ["4","j"]
+        },
+        {
+            "before": ["<S-k>"],
+            "after": ["4","k"]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+
+        // ========================文件操作========================= 
+        {
+            // 显示所有命令
+            "before": ["<leader>", "f", "p"],
+            "commands": ["workbench.action.showCommands"],
+        }, 
+        {
+            // 搜索文件, 搜索后按 Tab 配合 jk 进行选择
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"],
+        },
+        {
+            // 最新使用的文件
+            "before": ["<Leader>", "f", "u"],
+            "commands": ["workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"]
+        },
+        // ========================Mark down========================= 
+        {
+            "before": ["<leader>", "p", "s"],
+            "commands": ["markdown-preview-enhanced.openPreviewToTheSide"],
+        },
+        {
+            "before": ["<leader>", "p", "S"],
+            "commands": ["markdown-preview-enhanced.openPreview"],
+        },
+
+        // ========================代码跳转========================= 
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.revealDefinition"],
+        },
+        {
+            "before": ["g", "b"],
+            "commands": ["workbench.action.navigateBack"],
+        },
+        {
+            "before": ["g", "p"],
+            "commands": ["workbench.action.navigateForward"],
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"],
+        },
+
+        // ========================Editor Group==================== 
+        {
+            "before": ["<leader>", "q", "q"],
+            "commands": ["workbench.action.closeActiveEditor"],
+        },
+        {
+            "before": ["<leader>", "q", "Q"],
+            "commands": ["workbench.action.closeAllEditors"],
+        },
+
+        // ========================代码提示========================= 
+        {
+            "before": ["<leader>", "s", "p"],
+            "commands": ["editor.action.triggerParameterHints"],
+        },
+        {
+            "before": ["<Leader>", "s", "h"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["<Leader>", "s", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["<Leader>", "s", "f"],
+            "commands": ["togglePeekWidgetFocus"]
+          },
+        // ========================折叠展开 Region================== 
+        {
+            "before": ["<leader>", "r", "J"],
+            "commands": ["editor.unfoldAll"]
+        },
+        {
+            "before": ["<leader>", "r", "j"],
+            "commands": ["editor.unfoldRecursively"],
+        },
+        {
+            "before": ["<leader>", "r", "K"],
+            "commands": ["editor.foldAllExcept"],
+        },
+        {
+            "before": ["<leader>", "r", "k"],
+            "commands": ["editor.foldAll"]
+        },
+        {
+            "before": ["<leader>", "r", "w"],
+            "commands": ["editor.action.toggleWordWrap"]
+        },
+        // ========================设置================== 
+        {
+            "before": ["<leader>", "j", "s"],
+            "commands": ["workbench.action.openSettingsJson"]
+        },
+        {
+            "before": ["<leader>", "j", "k"],
+            "commands": ["workbench.action.openGlobalKeybindingsFile"]
+        },
+        
+    ],
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "workbench.editorAssociations": {
+        "*.o": "default"
+    },
+    "git.autofetch": true,
+}
