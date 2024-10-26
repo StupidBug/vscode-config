@@ -15,13 +15,13 @@
         // terminal 切换下一个终端组
         "key": "ctrl+j",
         "command": "workbench.action.terminal.focusNext",
-        "when": "terminal.visible"
+        "when": "view.terminal.visible"
     },
     {
         // terminal 切换下一个终端组
         "key": "ctrl+k",
         "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminal.visible"
+        "when": "view.terminal.visible"
     },
     {
         // terminal 新建一个终端组
@@ -39,8 +39,7 @@
         // peek defination 时切换至代码预览
         "key": "ctrl+l",
         "command": "togglePeekWidgetFocus",
-        "when": "inReferenceSearchEditor && referenceSearchVisible"
- 
+        "when": "inReferenceSearchEditor && referenceSearchVisible && !focusex"
     },
     {
         // peek defination 时切换至文件选择
@@ -81,16 +80,22 @@
         "command": "workbench.files.action.focusFilesExplorer", 
         "when": "editorTextFocus"
     },
+    {
+        "key": "o",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.files.action.focusFilesExplorer", 
+        "when": "activeEditorGroupIndex = 1"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "!referenceSearchVisible && filesExplorerFocus"
+    },
 
-    {   // 新增文件
-        "key": "a",
-        "command": "explorer.newFile", 
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {   // 新增文件
-        "key": "cmd+o",
-        "command": "projectManager.listGitProjects#sideBarGit", 
-    },
     // ========================切换 Editor========================= 
     // 由 vim 进行窗口切换，在特殊窗口无法触发 vim 模式，无法生效，因此迁移
     // 系统级别的键位绑定
@@ -136,7 +141,7 @@
         // 向左移动
         "key": "ctrl+h",
         "command": "workbench.action.focusLeftGroup",
-        "when": "!referenceSearchVisible"
+        "when": "!referenceSearchVisible && activeEditorGroupIndex != 1"
     },
     {
         "key": "cmd+k cmd+left",
@@ -156,9 +161,8 @@
         // 向右移动
         "key": "ctrl+l",
         "command": "workbench.action.focusRightGroup",
-        "when": "!referenceSearchVisible"
+        "when": "!referenceSearchVisible && !filesExplorerFocus"
     },
-
     {
         "key": "cmd+k cmd+right",
         "command": "-workbench.action.focusRightGroup"
