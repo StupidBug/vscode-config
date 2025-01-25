@@ -67,7 +67,6 @@
         "command": "editor.action.scrollRightHover",
         "when": "editorHoverFocused"
     },
-
     // ========================边栏========================= 
     {
         // 打开文件栏
@@ -85,15 +84,34 @@
         "command": "list.select",
         "when": "listFocus && !inputFocus"
     },
+    {   // project manager 显示项目
+        "key": "cmd+o",
+        "command": "projectManager.listGitProjects#sideBarGit", 
+    },
     {
         "key": "ctrl+h",
         "command": "workbench.files.action.focusFilesExplorer", 
-        "when": "activeEditorGroupIndex = 1"
+        "when": "activeEditorGroupIndex == 1 && !(!inReferenceSearchEditor && referenceSearchVisible) && workbench.explorer.fileView.visible"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.view.search.focus", 
+        "when": "activeEditorGroupIndex == 1 && !(!inReferenceSearchEditor && referenceSearchVisible) && searchViewletVisible"
     },
     {
         "key": "ctrl+l",
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "!referenceSearchVisible && filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "search.action.focusSearchFromResults",
+        "when": "accessibilityModeEnabled && searchViewletVisible || firstMatchFocus && searchViewletVisible"
     },
 
     // ========================切换 Editor========================= 
@@ -167,8 +185,6 @@
         "key": "cmd+k cmd+right",
         "command": "-workbench.action.focusRightGroup"
     },
-      
-
     // ========================移动 editor 到不同的 Editor Group========================= 
     {
         "key": "ctrl+shift+l",

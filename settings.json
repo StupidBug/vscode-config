@@ -9,18 +9,18 @@
     "zenMode.hideLineNumbers": false,
     "projectManager.git.baseFolders": [
         "/Users/leiming/go/src",
-        "/Users/leiming/PycharmProjects"
+        "/Users/leiming/pyproject"
     ],
     "projectManager.sortList": "Recent",
     // ========================Language==============================
-    "go.testTags": "iface_mock",
     "go.goroot": "/usr/local/go",
     "go.gopath": "/Users/leiming/go",
     "go.toolsManagement.autoUpdate": true,
+    "go.formatTool": "gofmt",
     "gomod.autoReveal": true,
     "gomod.focusMode": false,
     "gopls": {
-        "ui.semanticTokens": true
+        "ui.semanticTokens": true,
     },
     "php.validate.enable": false,
     "typescript.suggest.paths": false,
@@ -309,4 +309,7 @@
         "*.o": "default"
     },
     "git.autofetch": true,
+    "editor.detectIndentation": false,
+    "terminal.integrated.detectLocale": "off",
+    "files.autoSave": "onFocusChange",
 }
