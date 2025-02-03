@@ -9,7 +9,9 @@
     "zenMode.hideLineNumbers": false,
     "projectManager.git.baseFolders": [
         "/Users/leiming/go/src",
-        "/Users/leiming/pyproject"
+        "/Users/leiming/pyproject",
+        "/Users/leiming/Library/Rime",
+        "/Users/leiming/Library/Application Support/Code/User"
     ],
     "projectManager.sortList": "Recent",
     // ========================Language==============================
