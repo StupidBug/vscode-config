@@ -19,6 +19,8 @@
     "go.gopath": "/Users/leiming/go",
     "go.toolsManagement.autoUpdate": true,
     "go.formatTool": "gofmt",
+    "go.testTimeout": "60s",
+    "go.testFlags": ["-v"],
     "gomod.autoReveal": true,
     "gomod.focusMode": false,
     "gopls": {
@@ -65,6 +67,16 @@
                 "j"
             ]
         },
+        {
+            "before": [
+                ","
+            ],
+            "after": [
+                "<leader>",
+                "<leader>"
+            ]
+        },
+
         {
             "before": [
                 "<S-k>"
@@ -314,4 +326,5 @@
     "editor.detectIndentation": false,
     "terminal.integrated.detectLocale": "off",
     "files.autoSave": "onFocusChange",
+    "diffEditor.ignoreTrimWhitespace": false,
 }
