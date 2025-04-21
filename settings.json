@@ -9,14 +9,16 @@
     "zenMode.hideLineNumbers": false,
     "projectManager.git.baseFolders": [
         "/Users/leiming/go/src",
-        "/Users/leiming/pyproject",
+        "/Users/leiming/Projects/pyprojects",
+        "/Users/leiming/Projects/cprojects",
+        "/Users/leiming/Projects/go",
         "/Users/leiming/Library/Rime",
         "/Users/leiming/Library/Application Support/Code/User"
     ],
     "projectManager.sortList": "Recent",
     // ========================Language==============================
-    "go.goroot": "/usr/local/go",
-    "go.gopath": "/Users/leiming/go",
+    // "go.goroot": "/Users/leiming/.gvm/...",
+    // "go.gopath": "/Users/leiming/.gvm/...",
     "go.toolsManagement.autoUpdate": true,
     "go.formatTool": "gofmt",
     "go.testTimeout": "60s",
@@ -32,19 +34,17 @@
     // ========================Workbench=============================
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.smoothScrolling": true,
-    "workbench.colorTheme": "GitHub Dark",
     // ========================Editor================================
-    "editor.smoothScrolling": true,
     "editor.fontSize": 13,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.lineHeight": 22,
     "editor.peekWidgetDefaultFocus": "editor", // 当通过 widget peek 代码时，优先聚焦在编辑器
     "editor.minimap.enabled": false,
-    "editor.lineHeight": 22,
-    "editor.fontFamily": "JetBrains Mono",
     "editor.hover.enabled": true,
     "editor.formatOnSave": false,
     "editor.fontLigatures": true,
     "editor.semanticHighlighting.enabled": true,
-    "editor.cursorSmoothCaretAnimation": "on",
+    // "editor.cursorSmoothCaretAnimation": "on",
     "editor.bracketPairColorization.enabled": false,
     // ========================Vim  Settings========================= 
     "vim.leader": "<space>",
@@ -67,6 +67,7 @@
                 "j"
             ]
         },
+
         {
             "before": [
                 ","
@@ -298,33 +299,20 @@
         },
         // ========================设置================== 
         {
-            "before": [
-                "<leader>",
-                "j",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.openSettingsJson"
-            ]
+            // 切到个人配置页面
+            "before": ["<leader>", "j", "s"],
+            "commands": ["workbench.action.openSettingsJson"]
         },
         {
-            "before": [
-                "<leader>",
-                "j",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.openGlobalKeybindingsFile"
-            ]
+            // 切到快捷键配置页面
+            "before": ["<leader>", "j", "k"],
+            "commands": ["workbench.action.openGlobalKeybindingsFile"]
         },
     ],
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "workbench.editorAssociations": {
-        "*.o": "default"
-    },
-    "git.autofetch": true,
+    "workbench.colorTheme": "GitHub Dark",   // 设置主题
+    "git.autofetch": false,
     "editor.detectIndentation": false,
     "terminal.integrated.detectLocale": "off",
-    "files.autoSave": "onFocusChange",
     "diffEditor.ignoreTrimWhitespace": false,
+    "search.followSymlinks": false,
 }

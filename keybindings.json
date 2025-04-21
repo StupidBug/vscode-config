@@ -11,18 +11,6 @@
         "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal",
     },
-    // {
-    //     // terminal 切换下一个终端组
-    //     "key": "ctrl+j",
-    //     "command": "workbench.action.terminal.focusNext",
-    //     "when": "view.terminal.visible"
-    // },
-    // {
-    //     // terminal 切换下一个终端组
-    //     "key": "ctrl+k",
-    //     "command": "workbench.action.terminal.focusPrevious",
-    //     "when": "view.terminal.visible"
-    // },
     {
        // terminal 新建一个终端组
         "key": "ctrl+cmd+n",
