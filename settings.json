@@ -22,7 +22,9 @@
     "go.toolsManagement.autoUpdate": true,
     "go.formatTool": "gofmt",
     "go.testTimeout": "60s",
-    "go.testFlags": ["-v"],
+    "go.testFlags": [
+        "-v"
+    ],
     "gomod.autoReveal": true,
     "gomod.focusMode": false,
     "gopls": {
@@ -41,7 +43,7 @@
     "editor.peekWidgetDefaultFocus": "editor", // 当通过 widget peek 代码时，优先聚焦在编辑器
     "editor.minimap.enabled": false,
     "editor.hover.enabled": true,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.fontLigatures": true,
     "editor.semanticHighlighting.enabled": true,
     // "editor.cursorSmoothCaretAnimation": "on",
@@ -76,7 +78,6 @@
                 "workbench.action.navigateForward"
             ],
         },
- 
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
@@ -88,7 +89,6 @@
                 "j"
             ]
         },
-
         {
             "before": [
                 ","
@@ -98,7 +98,6 @@
                 "<leader>"
             ]
         },
-
         {
             "before": [
                 "<S-k>"
@@ -321,16 +320,28 @@
         // ========================设置================== 
         {
             // 切到个人配置页面
-            "before": ["<leader>", "j", "s"],
-            "commands": ["workbench.action.openSettingsJson"]
+            "before": [
+                "<leader>",
+                "j",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.openSettingsJson"
+            ]
         },
         {
             // 切到快捷键配置页面
-            "before": ["<leader>", "j", "k"],
-            "commands": ["workbench.action.openGlobalKeybindingsFile"]
+            "before": [
+                "<leader>",
+                "j",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.openGlobalKeybindingsFile"
+            ]
         },
     ],
-    "workbench.colorTheme": "GitHub Dark",   // 设置主题
+    "workbench.colorTheme": "GitHub Dark", // 设置主题
     "git.autofetch": false,
     "editor.detectIndentation": false,
     "terminal.integrated.detectLocale": "off",
