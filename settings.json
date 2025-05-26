@@ -57,6 +57,27 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "g",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
+            ],
+        },
+        {
+            "before": [
+                "g",
+                "p"
+            ],
+            "commands": [
+                "workbench.action.navigateForward"
+            ],
+        },
+ 
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
