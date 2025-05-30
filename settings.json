@@ -37,13 +37,12 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.smoothScrolling": true,
     // ========================Editor================================
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "editor.fontFamily": "JetBrains Mono",
     "editor.lineHeight": 22,
     "editor.peekWidgetDefaultFocus": "editor", // 当通过 widget peek 代码时，优先聚焦在编辑器
     "editor.minimap.enabled": false,
     "editor.hover.enabled": true,
-    "editor.formatOnSave": true,
     "editor.fontLigatures": true,
     "editor.semanticHighlighting.enabled": true,
     // "editor.cursorSmoothCaretAnimation": "on",
@@ -347,4 +346,15 @@
     "terminal.integrated.detectLocale": "off",
     "diffEditor.ignoreTrimWhitespace": false,
     "search.followSymlinks": false,
+    // =======================TODO 高亮插件设置================== 
+    "todohighlight.keywords": [
+        "DEBUG:",
+        "REVIEW:",
+        "NOTE",
+    ],
+    "files.autoSave": "onFocusChange",
+    "makefile.configureOnOpen": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modifications"
 }
