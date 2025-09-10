@@ -5,19 +5,18 @@
         "key": "ctrl+m",
         "command": "workbench.action.toggleZenMode",
     },
-
     // =======================  终端  ========================= 
-    {   // 打开终端
+    { // 打开终端
         "key": "ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal",
     },
     {
-       // terminal 新建一个终端组
+        // terminal 新建一个终端组
         "key": "ctrl+cmd+n",
         "command": "workbench.action.terminal.new",
         "when": "terminal.visible && terminal.active && terminalFocus"
     },
-    {   // terminal 删除一个终端组
+    { // terminal 删除一个终端组
         "key": "ctrl+cmd+k",
         "command": "workbench.action.terminal.kill",
         "when": "terminal.visible && terminal.active && terminalFocus"
@@ -62,9 +61,9 @@
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "viewContainer.workbench.view.explorer.enabled && !inputFocus"
     },
-    {   // 自动聚焦在文件树
+    { // 自动聚焦在文件树
         "key": "ctrl+e",
-        "command": "workbench.files.action.focusFilesExplorer", 
+        "command": "workbench.files.action.focusFilesExplorer",
         "when": "editorTextFocus"
     },
     {
@@ -72,18 +71,18 @@
         "command": "list.select",
         "when": "listFocus && !inputFocus"
     },
-    {   // project manager 显示项目
+    { // project manager 显示项目
         "key": "cmd+o",
-        "command": "projectManager.listGitProjects#sideBarGit", 
+        "command": "projectManager.listProjects",
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.files.action.focusFilesExplorer", 
+        "command": "workbench.files.action.focusFilesExplorer",
         "when": "activeEditorGroupIndex == 1 && !(!inReferenceSearchEditor && referenceSearchVisible) && workbench.explorer.fileView.visible"
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.view.search.focus", 
+        "command": "workbench.view.search.focus",
         "when": "activeEditorGroupIndex == 1 && !(!inReferenceSearchEditor && referenceSearchVisible) && searchViewletVisible"
     },
     {
@@ -101,7 +100,6 @@
         "command": "search.action.focusSearchFromResults",
         "when": "accessibilityModeEnabled && searchViewletVisible || firstMatchFocus && searchViewletVisible"
     },
-
     // ========================切换 Editor========================= 
     // 由 vim 进行窗口切换，在特殊窗口无法触发 vim 模式，无法生效，因此迁移
     // 系统级别的键位绑定
@@ -137,7 +135,6 @@
         "key": "ctrl+j",
         "command": "workbench.action.focusBelowGroup",
     },
-
     {
         "key": "cmd+k cmd+down",
         "command": "-workbench.action.focusBelowGroup"

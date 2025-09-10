@@ -17,8 +17,8 @@
     ],
     "projectManager.sortList": "Recent",
     // ========================Language==============================
-    // "go.goroot": "/Users/leiming/.gvm/...",
-    // "go.gopath": "/Users/leiming/.gvm/...",
+    "go.goroot": "/usr/local/go",
+    "go.gopath": "~/go",
     "go.toolsManagement.autoUpdate": true,
     "go.formatTool": "gofmt",
     "go.testTimeout": "60s",
@@ -352,9 +352,19 @@
         "REVIEW:",
         "NOTE",
     ],
-    "files.autoSave": "onFocusChange",
-    "makefile.configureOnOpen": true,
     "terminal.external.osxExec": "iTerm.app",
+    "files.autoSave": "onFocusChange",
+    "bashIde.includeAllWorkspaceSymbols": true,
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modifications"
+    "redhat.telemetry.enabled": true,
+    "vs-kubernetes": {
+        "vs-kubernetes.knownKubeconfigs": [
+            "/var/run/kubernetes/admin.kubeconfig"
+        ],
+        "vs-kubernetes.kubeconfig": "/var/run/kubernetes/admin.kubeconfig",
+        "vscode-kubernetes.kubectl-path-linux": "/home/leiming.linux/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-linux": "/home/leiming.linux/.local/state/vs-kubernetes/tools/minikube/linux-arm64/minikube"
+    },
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontFamily": "Jetbrain Mono",
 }
